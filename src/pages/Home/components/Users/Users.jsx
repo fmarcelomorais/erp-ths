@@ -43,13 +43,13 @@ const Users = () => {
                     <td>{user.type}</td>
                     <td>{user.login}</td>
                     <td className="acao">
-                      <Link to={'user/'+user.id} className="btn ver">
+                      <Link to={user.type === 1 ? '/home/usuarios' : 'user/'+user.id} className="btn ver">
                         Abrir Cadastro
                       </Link> | 
-                      <Link to={'editeuser/'+user.id} className="btn editar">
+                      <Link to={user.type === 1 ? '/home/usuarios' : 'editeuser/'+user.id} className="btn editar">
                         Editar
                       </Link> | 
-                      <button onClick={handleClick} value={user.id} className="btn excluir">
+                      <button onClick={handleClick} value={user.id} className="btn excluir" disabled={user.type === 1 ? true : false }>
                         Excluir
                       </button>
                     </td>
