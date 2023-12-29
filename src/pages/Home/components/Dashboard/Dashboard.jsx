@@ -19,7 +19,7 @@ const Dashboard = () => {
     getter('account','accounts', setAccounts)
     getter('plan','plans', setPlans)       
   },[]); 
-  console.log(accounts)
+ 
   return (
     <section className='Dashboard'>
       <h2>DASHBOARD</h2>
