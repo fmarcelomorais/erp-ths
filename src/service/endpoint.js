@@ -1,5 +1,5 @@
-//const vercel_url = 'https://api-thstreaming.vercel.app'
-const vercel_url = 'http://localhost:3333'
+const vercel_url = 'https://api-erp-thstreaming.vercel.app/'
+//const vercel_url = 'http://localhost:3333'
 const swal = require("sweetalert")
 
 
