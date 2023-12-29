@@ -1,0 +1,21 @@
+.Input{
+    display: flex;
+    flex-direction: column;
+    padding:5px
+}
+.Input label{
+    margin-right: 10px;
+    font-family: Roboto;
+}
+.Input input{
+    padding: 5px;
+    font-family: Roboto;
+    color: #151521;
+    border:none;
+    border-radius: 5px;
+    width: 100%;
+}
+.Input input:focus{
+    background-color: #eeeeee;
+    box-shadow: 0 0 3px 3px #3737ff;
+}

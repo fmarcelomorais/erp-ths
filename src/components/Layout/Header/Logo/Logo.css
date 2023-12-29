@@ -1,0 +1,17 @@
+.logo{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.logo a{
+    text-decoration: none;
+}
+.logo i{
+    font-size: 1.5rem;
+    margin: 10px;
+}
+.logo span{
+    font-size: 1.4rem;
+    margin: 10px;
+    font-family: Oswald;
+}

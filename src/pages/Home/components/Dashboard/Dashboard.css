@@ -1,0 +1,13 @@
+.Dashboard{
+    display: flex; 
+    flex-direction: column;
+    padding:10px;
+    font-family: Oswald;
+}
+.Dashboard .content{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}

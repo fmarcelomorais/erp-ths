@@ -1,0 +1,33 @@
+.list{
+    padding: 10px;  
+    font-family: Roboto;      
+}
+.list span{
+    padding: 10px;  
+    font-family: Roboto;  
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+.list ul{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+.list ul li{
+    padding: 5px;
+    list-style: none;
+}
+.list ul li:hover{
+   background-color: #2D2D43;
+   border-radius: 5px;
+}
+.list ul li i{
+    margin: 10px;
+
+}
+.list ul li a{
+    padding: 5px;
+    text-decoration: none;
+    color: #FFF;
+}

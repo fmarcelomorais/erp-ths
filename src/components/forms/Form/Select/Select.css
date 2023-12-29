@@ -1,0 +1,23 @@
+.Select{
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+}
+.Select label{
+    margin-right: 10px;
+    font-family: Roboto;
+}
+.Select select{
+    padding: 8px;
+    font-family: Roboto;
+    color: #151521;
+    border:none;
+    border-radius: 5px;
+    min-width: 210px;
+}
+.Select select:focus{
+    background-color: #2D2D43;
+    box-shadow: 0 0 3px 3px #3737ff;
+    color: #FFF;
+    
+}

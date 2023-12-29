@@ -1,0 +1,45 @@
+.Display{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 500px;
+    background-color: #2D2D43;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    
+}
+.Display .headerInfo{
+    display: flex;
+    padding: 10px;
+}
+.Display .info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;   
+    padding: 10px;
+    height: 100%;
+    font-family: Oswald;
+    
+}
+.Display i{
+    display: flex;
+    font-size: 2rem;    
+}
+.Display h3{
+    font-family: Oswald; 
+    margin-left: 20px;  
+    color: #FFF; 
+}
+.Display h3 a{
+    font-family: Oswald; 
+    margin-left: 20px;  
+    color: #FFF; 
+    text-decoration: none;
+}
+.Display .info p{
+    display: flex;
+    font-size: 2rem;
+    font-family: 'Oswald';
+    margin-left: 20px;
+}

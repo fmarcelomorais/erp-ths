@@ -1,0 +1,69 @@
+.Panels{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+}
+.Panels .top{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.Panels .content {
+    overflow-y: scroll;
+    max-height: 250px;
+    
+}
+::-webkit-scrollbar {
+    width: 12px; /* width of the entire scrollbar */
+}
+  
+::-webkit-scrollbar-track {
+    background: rgb(68, 68, 68)
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: #646b79;
+}
+.Panel .content .table .acao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.btn {
+    padding: 5px;
+    border:none;
+    background-color: #2D2D43;
+    width: 30%;
+    padding: 5px;
+    border-radius: 5px;   
+    color:#FFF; 
+}
+
+.btn:hover{
+    color:#FFF;
+    background-color: #575781;
+    transition: 1s;
+    box-shadow: 0 0 3px 1px #FFF;
+}
+
+.btn.ver:hover{
+    color:#FFF;
+    background-color: #00c040;
+    transition: 1s;
+    box-shadow: 0 0 3px 1px #FFF;
+}
+.btn.editar:hover{
+    color:#FFF;
+    background-color: #d4b400;
+    transition: 1s;
+    box-shadow: 0 0 3px 1px #FFF;
+}
+.btn.excluir:hover{
+    color:#FFF;
+    background-color: #d30202;
+    transition: 1s;
+    box-shadow: 0 0 3px 1px #FFF;
+}

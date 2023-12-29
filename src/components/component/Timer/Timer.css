@@ -1,0 +1,22 @@
+.Timer{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  display: flex;
+  background-color: #1e1e2d;
+  width: 100%;
+}
+.Timer p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#1e1e2d;
+  background-color: #FFF;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 5px;
+  margin-left: 10px;
+  font-size: 1.3rem;
+  font-family: Oswald;
+}

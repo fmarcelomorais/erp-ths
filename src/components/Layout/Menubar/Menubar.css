@@ -1,0 +1,30 @@
+.menubar{
+    grid-area: menu;
+
+    background-color: #1e1e2d;
+    border-right: 1px solid #2D2D43;
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    top:80px;
+  
+}
+.scrollbar{
+    background-color: #1e1e2d;
+    /* position: fixed; */
+    width: 250px;
+    height: 75%;  
+    padding: 20px;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    width: 12px; /* width of the entire scrollbar */
+}
+  
+::-webkit-scrollbar-track {
+    background: rgb(68, 68, 68)
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: #646b79;
+}

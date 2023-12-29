@@ -1,0 +1,15 @@
+.Footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #1e1e2d;
+    padding: 0;
+}
+.Footer p{
+    margin-top: 10px;
+}
+.Footer p strong{
+    color: orange;
+    font-family: Roboto;
+}
