@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, Outlet } from 'react-router-dom'
-import { maskphone } from '../../../../service/functions'
+import { setDate, statusConta } from '../../../../service/functions'
 import { excluir, getter } from '../../../../service/endpoint'
 import swal from 'sweetalert'
 
@@ -20,7 +20,7 @@ const Accounts = () => {
       swal("", "Deletado", "success")
     }
   }
-
+  
   return (
     <div className='Users'>
       <div className="top">
@@ -31,9 +31,9 @@ const Accounts = () => {
           <table className="table" style={{ backgroundColor: "#1e1e2d" }}>
             <thead>
               <tr>
-                <th scope="col">Nome</th>
-                <th scope="col">Contato</th>
-                <th scope="col">Observação</th>
+                <th scope="col">Login</th>
+                <th scope="col">Renovação</th>
+                <th scope="col">Status da Conta</th>
                 <th scope="col">Ação</th>
               </tr>
             </thead>
@@ -41,9 +41,9 @@ const Accounts = () => {
               {accounts &&
                 accounts.contas.map((account) => (
                   <tr className="" key={account.id}>
-                    <td>{account.name}</td>
-                    <td>{maskphone(account.phone)}</td>
-                    <td>{account.observation}</td>
+                    <td>{account.login}</td>
+                    <td>{setDate(account.daterenovation)}</td>
+                    <td>{statusConta(account.statusaccount)}</td>
                     <td className="acao">
                       <Link to={'account/'+account.id} className="btn ver">
                         Abrir Cadastro

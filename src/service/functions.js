@@ -31,3 +31,18 @@ export function maskphone(phone) {
 export function setDate(date){
   return new Date(date).toLocaleDateString()
 }
+
+export function statusConta(status){
+  let statusConta = "";
+  if(status === "01"){
+    statusConta = "Ativo";
+  }
+  if(status === "02"){
+    statusConta = "Inativo";
+  }
+  if(status === "03"){
+    statusConta = "Bloqueado";
+  }
+
+  return statusConta
+}
