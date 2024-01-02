@@ -53,8 +53,6 @@ const FormNovoAccount = () => {
       dateExpiration: dataVencimento
     }
 
-    console.log(data, status)
-
     create('account', 'register', data, setStatus)
     if(status){
       swal("", "Cadastrado", "success")

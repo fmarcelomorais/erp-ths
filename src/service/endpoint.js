@@ -39,11 +39,12 @@ export const getter = async(base, route, set, id) =>{
     }else{
         url = `${vercel_url}/${base}/${route}` 
     }
-    const request = await fetch(url,{
+
+    const request = await fetch(url, {
         method: 'GET',
         headers: {
             'Access-Control-Allow-Origin': '*',
-            'Content-Type': 'application/json; charset=utf-8',
+            'Content-Type': 'application/json',
             'Authorization': JSON.parse(window.localStorage.getItem('user')).token    
         },				
     })

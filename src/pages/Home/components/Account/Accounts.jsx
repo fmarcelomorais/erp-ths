@@ -31,7 +31,7 @@ const Accounts = () => {
           <table className="table" style={{ backgroundColor: "#1e1e2d" }}>
             <thead>
               <tr>
-                <th scope="col">Login</th>
+                <th scope="col">Cliente</th>
                 <th scope="col">Renovação</th>
                 <th scope="col">Status da Conta</th>
                 <th scope="col">Ação</th>
@@ -41,7 +41,7 @@ const Accounts = () => {
               {accounts &&
                 accounts.contas.map((account) => (
                   <tr className="" key={account.id}>
-                    <td>{account.login}</td>
+                    <td>{account.name}</td>
                     <td>{setDate(account.daterenovation)}</td>
                     <td>{statusConta(account.statusaccount)}</td>
                     <td className="acao">
