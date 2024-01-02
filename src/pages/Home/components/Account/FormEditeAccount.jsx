@@ -37,8 +37,6 @@ const FormEditeAccount = ({accountEdite}) => {
         
     }
 
-
-
   return (
     <div className="Form">
         <form >

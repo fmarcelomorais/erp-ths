@@ -29,7 +29,7 @@ const FormNewPanel = () => {
     }
 
     create('panel', 'register', data, setStatus);
-    console.log(status)
+
     if(status) swal("", status, "success");
   }
 

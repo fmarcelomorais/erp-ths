@@ -17,7 +17,7 @@ const Reseller = () => {
   const handleClick = React.useCallback(() => {    
     getter('panel', 'panel', setPanels, reseller.id_panel)
   },[reseller])
-  console.log(panel)
+ 
   
   return (
     <div className='Reseller'>

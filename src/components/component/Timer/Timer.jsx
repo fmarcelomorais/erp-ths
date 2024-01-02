@@ -15,10 +15,10 @@ const Timer = () => {
 
   React.useEffect(()=>{
     logout();
-  },[relogio, token, setToken]);
+  },[token, relogio]);
 
   const logout = () =>{
-    if(relogio.minutos === 59){ 
+    if(relogio.horas === 1){ 
       swal(" ", "Tempo Expirou", "warning")
       window.localStorage.setItem('user', JSON.stringify({token:""}))
       setToken(JSON.parse(window.localStorage.getItem('user')).token)
