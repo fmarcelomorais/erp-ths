@@ -31,7 +31,7 @@ export const login = async (route, data, set, navigate) => {
 }
 
 //ROTAS GET
-export const getter = async(base, route, set, id) =>{ 
+export const getter = async(base, route, set, id=null) =>{ 
     
     let url = null
     if(id){
@@ -43,7 +43,7 @@ export const getter = async(base, route, set, id) =>{
     const request = await fetch(url, {
         method: 'GET',
         headers: {
-            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Origin': "*",
             'Content-Type': 'application/json',
             'Authorization': JSON.parse(window.localStorage.getItem('user')).token    
         },				
