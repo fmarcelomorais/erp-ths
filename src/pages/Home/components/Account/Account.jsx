@@ -22,6 +22,7 @@ const Account = () => {
         <p>Painel: {account.nomepainel}</p>      
         <p>Plano: {account.nomeplano}</p>      
         <p>Contato: {maskphone(account.phone)}</p>      
+        <p>Observação: {account.observation}</p>      
     </>
     )}
     </div>

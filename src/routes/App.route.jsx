@@ -27,6 +27,7 @@ import NovoPanel from "../pages/Home/components/Panels/NovoPanel";
 import Financeiro from "../pages/Home/components/Financeiro/Financeiro";
 import NovoAccoutn from "../pages/Home/components/Account/NovoAccoutn";
 import Account from "../pages/Home/components/Account/Account";
+import EditeAccount from "../pages/Home/components/Account/EditeAccount";
 
 export const RouteApp = () => ( 
    <BrowserRouter>   
@@ -54,6 +55,7 @@ export const RouteApp = () => (
             <Route path="contas" element={<Accounts />} >
                 <Route path="account/:id" element={<Account />}/>
                 <Route path="registerAccount" element={<NovoAccoutn />}/>
+                <Route path="editeaccount/:id" element={<EditeAccount />}/>
             </Route>
             <Route path="planos" element={<Plans />} >
                 <Route path="plan/:id" element={<Plan />} />
